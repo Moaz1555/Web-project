@@ -1,0 +1,22 @@
+﻿@model Project
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form asp-action="create" asp-controller="Project" method="post">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+    <label asp-for="Description"></label>
+    <input asp-for="Description"  />
+    <span asp-validation-for="Description"></span>
+    <label asp-for="Startdate"></label>
+    <input asp-for="Startdate" />
+    <span asp-validation-for="Startdate"></span>
+    <label asp-for="Enddate"></label>
+    <input asp-for="Enddate" />
+    <span asp-validation-for="Enddate"></span>
+    <input type="submit" />
+
+</form>

@@ -1,0 +1,53 @@
+﻿@model Tasks
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@* <form asp-action="update" asp-controller="Team" method="post">
+    
+    <input asp-for="MemberId" type="hidden" />
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+    <label asp-for="Email"></label>
+    <input asp-for="Email" />
+    <span asp-validation-for="Email"></span>
+    <label asp-for="Role"></label>
+    <input asp-for="Role"  />
+    <span asp-validation-for="Role"></span>
+    <input type="submit" class="btn-outline-primary"/>
+
+</form> *@
+<form asp-action="update" asp-controller="Team" method="post">
+  
+    <label asp-for="Title"></label>
+    <input asp-for="Title" />
+    <span asp-validation-for="Title"></span>
+
+    <label asp-for="Description"></label>
+    <input asp-for="Description" />
+    <span asp-validation-for="Description"></span>
+
+    <label asp-for="Status"></label>
+     <input asp-for="Status" />
+    <span asp-validation-for="Status"></span>
+
+    <label asp-for="priority"></label>
+    <input asp-for="priority" />
+    <span asp-validation-for="priority"></span>
+
+    <label asp-for="DeadLine"></label>
+    <input asp-for="DeadLine" />
+    <span asp-validation-for="DeadLine"></span>
+
+    <label asp-for="MemberId"></label>
+    <input asp-for="MemberId" />
+    <span asp-validation-for="MemberId"></span>
+
+    <label asp-for="ProjectId"></label>
+    <input asp-for="ProjectId"  />
+    <span asp-validation-for="ProjectId"></span>
+
+    <input type="submit" />
+</form>
